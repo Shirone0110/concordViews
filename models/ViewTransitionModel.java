@@ -131,15 +131,15 @@ public class ViewTransitionModel implements ViewTransitionModelInterface
 				dcList = client.getDcByUserId();
 				for (DirectConversation d: dcList)
 				{
-					Label l = new Label();
-					l.setText(d.getName(client.getUser().getUserId()));
-					System.out.println(l.getText());
-					concordModel.getDcs().add(l);
+					//Label l = new Label();
+					//l.setText(d.getName(client.getUser().getUserId()));
+					//System.out.println(l.getText());
+					concordModel.getDcs().add(d);
 					for (Message m: d.getMessages())
 					{
-						l = new Label();
-						l.setText(m.getContent());
-						concordModel.getMessages().add(l);
+						//Label l = new Label();
+						//l.setText(m.getContent());
+						concordModel.getMessages().add(m);
 					}
 				}
 			} catch (RemoteException e1)

@@ -12,11 +12,8 @@ public class ConcordModel
 {
 	ObservableList<Server> servers = FXCollections.observableArrayList();
 	ObservableList<Channel> channels = FXCollections.observableArrayList();
-	//ObservableList<DirectConversation> dcs = FXCollections.observableArrayList();
-	//ObservableList<Message> messages = FXCollections.observableArrayList();
-	//ObservableList<Label> servers = FXCollections.observableArrayList();
-	ObservableList<Label> dcs = FXCollections.observableArrayList();
-	ObservableList<Label> messages = FXCollections.observableArrayList();
+	ObservableList<DirectConversation> dcs = FXCollections.observableArrayList();
+	ObservableList<Message> messages = FXCollections.observableArrayList();
 	
 	public ConcordModel() {}
 	
@@ -38,27 +35,12 @@ public class ConcordModel
 		return channels;
 	}
 	
-	/*public ObservableList<DirectConversation> getDcs()
+	public ObservableList<DirectConversation> getDcs()
 	{
 		return dcs;
 	}
 	
 	public ObservableList<Message> getMessages()
-	{
-		return messages;
-	}
-	
-	public ObservableList<Label> getServers()
-	{
-		return servers;
-	}*/
-	
-	public ObservableList<Label> getDcs()
-	{
-		return dcs;
-	}
-	
-	public ObservableList<Label> getMessages()
 	{
 		return messages;
 	}

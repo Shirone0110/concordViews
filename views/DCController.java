@@ -2,6 +2,7 @@ package views;
 
 import concord.ConcordClient;
 import concord.DirectConversation;
+import concord.Message;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -18,11 +19,11 @@ public class DCController
 	ViewTransitionModel model;
 	
     @FXML
-    //private ListView<DirectConversation> dcList;
-    private ListView<Label> dcListView;
+    private ListView<DirectConversation> dcListView;
+    //private ListView<Label> dcListView;
 
     @FXML
-    private ListView<Label> dcMessageListView;
+    private ListView<Message> dcMessageListView;
 
     @FXML
     private TextField dcMessageTextField;
@@ -50,5 +51,11 @@ public class DCController
     void onClickSettings(ActionEvent event) 
     {
     	model.showUser();
+    }
+    
+    @FXML
+    void onDcListViewClicked(MouseEvent event) 
+    {
+    	
     }
 }

@@ -37,8 +37,8 @@ public class ServerCell extends ListCell<Server>
 	{
 		super.updateItem(s, empty);//really important! always keep!
 		
-		System.out.println(s);
-		System.out.println(empty);
+		//System.out.println(s);
+		//System.out.println(empty);
 		if(empty)		
 		{
 			this.setGraphic(null);		
